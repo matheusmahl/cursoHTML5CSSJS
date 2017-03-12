@@ -131,6 +131,7 @@ header .header-black li a {
 header #logotipo {
     position: absolute;
     top: 20px;
+    z-index: 3;
 }
 
 #menu {
@@ -142,8 +143,14 @@ header #logotipo {
     font-family: "OpenSans";
 }
 
-#menu li.search {
-   width: 182px; 
+#menu li.search {   
+   transition-timing-function: cubic-bezier(1, -.91, .91, 1);
+   transition-duration: 1s;
+   width: 182px;
+}
+
+#menu li.search.ativo {
+    width: 300px;
 }
 
 #menu li.search input {
@@ -152,6 +159,10 @@ header #logotipo {
     border: none;
     height: 30px;
     line-height: 30px;
+}
+
+#menu li.search.ativo input {
+    width: 300px;
 }
 
 #menu li.search .input-group {
@@ -191,7 +202,7 @@ header #logotipo {
     position: relative;
     background: url("../img/banner.jpg") no-repeat;
     background-position: 0px -100px;
-    top: -110px;
+    top: -130px;
     background-size: cover;
 }
 
@@ -200,9 +211,15 @@ header #logotipo {
     color: #FFF;
     top: 300px;
     font-size: 92px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 45);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
     font-family: 'OpenSans-Light';
     margin-left: 50px;
+    transition: 1s;
+}
+
+#banner h1.efeito {
+    color: red;
+    font-size: 12em;
 }
 
 #banner h1 small{
@@ -235,6 +252,10 @@ header #logotipo {
 
 #news .thumbnails {
     margin-top: 20px;   
+}
+
+#news .thumbnails .item-inner {
+    padding: 10px;
 }
 
 #news .thumbnails h3 {
@@ -453,4 +474,8 @@ footer .list-socials a {
 footer .list-socials i {
     font-size: 16px;
     margin: 7px auto;
+}
+
+video {
+    width: 60%;
 }

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Orlando City</title>
         <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/OwlCarousel2-2.2.0/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/orlando.css">
     </head>
@@ -46,21 +47,23 @@
 
             <div class="container">
                 <div class="row">
-                   <nav id="menu" class="pull-right">
-                       <ul>
-                           <li><a href="#">Tickets</a></li>
-                           <li><a href="#">News</a></li>
-                           <li><a href="#">Schedule</a></li>
-                           <li class="search">
+                    <nav id="menu" class="pull-right">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="#">Tickets</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Schedule</a></li>
+                            <li class="search">
                                 <div class="input-group">
-                                    <input type="search" placeholder="search...">
+                                    <input type="search" placeholder="search..." id="input-search">
                                     <span class="input-group-btn">
                                         <button class="" type="button"><i class="fa fa-search"></i></button>
                                     </span>                                   
                                 </div><!-- /input-group -->
                            </li>
-                       </ul>
-                   </nav>
+                        </ul>
+                    </nav>
                 </div><!-- /row -->
             </div><!-- /container -->
         </header>
@@ -78,36 +81,64 @@
                     <hr>
                 </div>
 
-                <div class="row thumbnails">                        
-                    <div class="col-md-3">
+                <div class="row thumbnails owl-carousel owl-theme">
+                    <div class="item-inner">
                         <a href="#">
                             <img src="img/noticia-thumb.jpg" alt="Noticia">
                             <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
                             <time>December 21, 2015</time>
                          </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="item-inner">
                         <a href="#">
                             <img src="img/noticia-thumb.jpg" alt="Noticia">
                             <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
                             <time>December 21, 2015</time>
                          </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="item-inner">
                         <a href="#">
                             <img src="img/noticia-thumb.jpg" alt="Noticia">
                             <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
                             <time>December 21, 2015</time>
                          </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="item-inner">
                         <a href="#">
                             <img src="img/noticia-thumb.jpg" alt="Noticia">
                             <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
                             <time>December 21, 2015</time>
                          </a>
                     </div>
-                </div><!-- /row thumbnails -->
+                    <div class="item-inner">
+                        <a href="#">
+                            <img src="img/noticia-thumb.jpg" alt="Noticia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>December 21, 2015</time>
+                         </a>
+                    </div>
+                    <div class="item-inner">
+                        <a href="#">
+                            <img src="img/noticia-thumb.jpg" alt="Noticia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>December 21, 2015</time>
+                         </a>
+                    </div>
+                    <div class="item-inner">
+                        <a href="#">
+                            <img src="img/noticia-thumb.jpg" alt="Noticia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>December 21, 2015</time>
+                         </a>
+                    </div>
+                    <div class="item-inner">
+                        <a href="#">
+                            <img src="img/noticia-thumb.jpg" alt="Noticia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>December 21, 2015</time>
+                         </a>
+                    </div>
+                </div><!-- /row thumbnails owl-carousel owl-theme -->
             </div><!-- /news -->
 
             <div id="estatisticas">
@@ -252,6 +283,8 @@
         </footer>
 
         <script type="text/javascript" src="lib/jquery/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="lib/OwlCarousel2-2.2.0/dist/owl.carousel.min.js"></script>
         <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/efeitos.js"></script>
     </body>
 </html>
